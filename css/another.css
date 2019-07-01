@@ -1,0 +1,555 @@
+
+
+body {
+    margin: 0;
+}
+
+/* NAVIGATION BAR */
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 0 3px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+.dropbtn {
+  display: none;
+}
+
+.dropdown-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0px 0px 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+.header-img {
+    height: 35px;
+    float: left;
+}
+
+.nav-bar li {
+    float: left;
+    display:inline;
+  }
+  
+.nav-bar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    height: 100%;
+    font-size: 0.9em;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+.nav-bar li a:hover {
+    background-color: #ffe551;
+    color: black;
+  }
+
+/*--------------------------------------------------------------------------------------*/
+
+
+
+/*WEB CONTAINER*/
+
+.web-container {
+  background-color:;
+  width: 80vw;
+  margin: auto;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.section-container {
+  margin: 200px auto 50px auto;
+  padding-top: 50px;
+}
+
+
+/*WELCOME SLIDES*/
+
+#welcome {
+    height: 90vh;
+}
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+.mySlides img {
+    padding-top: 50px;
+    vertical-align: middle;
+    height: 100vh;
+    object-fit:cover;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*----------------------------------------------------------------------------------*/
+
+/*BERITA*/
+
+.news-container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    margin: auto;
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.news-card {
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.news-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-title {
+    padding: 5px 15px 0 15px;
+
+}
+
+.news-content {
+    text-align: justify;
+    padding: 5px 15px 0 15px;
+}
+
+/* Presentation slides */
+
+.presentation {
+  background-color: none;
+  margin: auto auto auto auto;
+  width: 100%;
+}
+
+.presentation-slides {
+  margin: auto;
+  width: 100%;
+
+}
+
+/*INFOGRAFIS------------------------------------------------------------------------------*/
+
+.infographic-container {
+  position: relative;
+  margin: auto auto 30px auto;
+  background-color: #000000;
+}
+
+.infographic-slides img {
+  height: 80vh;
+  width: 50vw;
+  object-fit: contain;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  background-color:;
+  color: #fde24b;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color:#fffadd;
+  opacity: 0.5;
+}
+
+.infographic-dot {display: none}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/*MEDIA VIDEO AND TWITTER*/
+
+.media-container {
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.video-card {
+  width: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.video-youtube {
+  width: 100%;
+  height: 400px;
+}
+
+.twitter-card {
+  width: 40%;
+  height: 400px;
+  overflow: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*---------------JADWAL---------------*/
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.schedule-img {
+  width: 80%;
+  margin: 20px auto 20px auto; 
+}
+
+
+/*---------------Layanan Kesehatan---------------*/
+
+.icon-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 500px;
+  flex-wrap: wrap;
+}
+
+.icon-element {
+  margin: 30px;
+}
+
+.icon-img {
+  width: 100px;
+}
+
+.icon-text {
+  text-align: center;
+}
+
+
+/*---------------Layanan Pengaduan---------------*/
+
+.form-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-element {
+  padding: 5px;
+}
+
+.label {}
+
+.input {
+  border: .7px solid rgb(160, 160, 160);
+  border-radius: 3px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.comment-area {
+  padding-top: 5px;
+  min-width: 250px; 
+  height: 250px;
+  border-radius: 3px;
+}
+
+.submit {
+  border: 0px solid rgb(160, 160, 160);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.submit:hover {
+  background-color: #fde24b;
+}
+
+/* MAP STASIUN LRT */
+
+.map-container{
+  margin: auto;
+  width: 50vw;
+}
+
+.map-stations {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+/*footer*/
+
+.contact-container {
+  display: sticky;
+  width: 100%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffe7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+
+.contact-map {
+  width: 100%;
+  height: 150px;
+  
+}
+
+.contact {
+  width: 40%;
+  text-align: left;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.contact img{
+  margin: 10px;
+}
+
+/*----------------------MEDIA QUERY------------------------*/
+
+@media (max-width: 900px) {
+
+  .dropdown-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 50px 0 50px;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: none;
+  }
+
+  .dropbtn {
+    width: 100%;
+    display: inline-block;
+    float: right;
+    border: none;
+    text-decoration: none;
+    background-color: #fde24b;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    height: 100%;
+    font-size: 1.2em;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .show {
+    display: block;
+  }
+  
+  .nav-bar li {
+    float: none;
+    display:inline;
+  }
+
+  .header-img {
+    display:none;
+  }
+  
+  .web-container {
+    background-color:;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .news-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin: auto;
+    grid-gap: 20px;
+    width: 100%;
+}
+}
+
+@media (max-width: 550px) {
+  .web-container {
+    background-color:;
+    width: 95vw;
+    margin: auto;
+  }
+
+  #welcome {
+    height: 95vh;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.news-title {
+    padding: 5px 15px 0 15px;
+
+}
+.news-content {
+    text-align: justify;
+    padding: 5px 15px 0 15px;
+}
+
+.media-container {
+  padding: 20px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.video-card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.video-youtube {
+  width: 100%;
+  margin: auto;
+}
+
+.twitter-card {
+  width: 100%;
+  height: 315px;
+  overflow: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.map-container{
+  margin: auto;
+  width: 80%;
+}
+
+.map-stations {
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.contact-map {
+  width: 80%;
+  height: 150px;
+}
+
+.contact {
+  width: 80%;
+  text-align: left;
+  color: #000;
+}
+}
+

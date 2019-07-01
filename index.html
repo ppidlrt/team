@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PPID LRT PALEMBANG</title>
+        <link rel="stylesheet" type="text/css" href="css/another.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+            <nav class="nav-bar">
+                <button onclick="myFunction()" class="dropbtn">PPID LRT SUMSEL</button>
+                <ul id="myDropdown" class="dropdown-content">
+                    <a href="#welcome"><img class="header-img" src="img/lrt-sumsel.svg"></a>
+                    <li><a href="#berita">BERITA</a></li> 
+                    <li><a href="#profile-media">MEDIA</a></li>
+                    <li><a href="#pengelolaan">HUKUM</a></li>
+                    <li><a href="#infografis">INFORMASI</a></li>
+                    <li><a href="#peta-stasiun">PETA</a></li>
+                    <li><a href="#jadwal">JADWAL</a></li>
+                    <li><a href="#kesehatan">KESEHATAN</a></li>
+                    <li><a href="#pengaduan">PENGADUAN</a></li>                   
+                    <li><a href="#kontak">KONTAK</a></li>
+                </ul>
+            </nav>
+            <script>
+            function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");}
+                // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+                }
+            }
+            }
+            </script>
+    </header>
+
+<div class="web-container">
+
+<section id="welcome">
+        <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 8</div>
+                  <img src="img/welcome-images/img0.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 8</div>
+                  <img src="img/welcome-images/img1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 8</div>
+                  <img src="img/welcome-images/img2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 8</div>
+                  <img src="img/welcome-images/img3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 8</div>
+                  <img src="img/welcome-images/img4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">6 / 8</div>
+                  <img src="img/welcome-images/img5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">7 / 8</div>
+                  <img src="img/welcome-images/img6.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">8 / 8</div>
+                  <img src="img/welcome-images/img7.jpg" style="width:100%">
+                </div>
+
+        </div>
+        <br>
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span> 
+                </div>
+                <script>
+                var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+                </script>
+</section>
+
+<section id="berita" class="section-container">
+    <h1 style="text-align: center">BERITA</h1>
+    <div class="news-container">
+        <div class="news-card">
+            <img class="news-img" src="img/news/news3.jpeg">
+            <h4 class="news-title">Libur Lebaran, LRT Palembang Tambah 6 Perjalanan</h4>
+            <p class="news-content">Light Rail Transit (LRT) Palembang akan tambahkan jumlah perjalanan kereta per hari. Penambahan perjalanan ini akan berlaku mulai 7 Juni 2019. Sebelumnya, perjalanan LRT Palembang per hari hanya 52 perjalanan, kini bertambah 6 perjalanan.</p>
+        </div>
+
+        <div class="news-card">
+            <img class="news-img" src="img/news/news2.jpg">
+            <h4 class="news-title">Ujicoba Integrasi Angkutan</h4>
+            <p class="news-content">Ujicoba integrasi angkutan moda BRT. MASA uji coba light rail transit (LRT) diharapkan bisa menjadi masa uji coba integrasi antarmoda provinsi Sumatera Selatan.</p>
+        </div>
+
+        <div class="news-card">
+            <img class="news-img" src="img/news/news1.jpgs">
+            <h4 class="news-title">Kunjungan Taruna-Taruni API Madiun</h4>
+            <p class="news-content">Pada tanggal (DD/MM/YYYY), Taruna-taruni API Madiun mengadakan kunjungan studi ke DEPO LRT Sumsel. Kunjungan ini diharapkan menjadi ajang sosialisasi sekaligus pembelajaran masyarakat tentang moda transportasi publik khususnya Kereta Api Ringan Sumatera Selatan.</p>
+        </div>
+    </div>
+</section>
+
+<section id="profile-media" class="section-container">
+    <h1 style="text-align: center">MEDIA PROFIL</h1>
+    <div class="media-container">
+        <div class="video-card">
+            <iframe class="video-youtube" src="https://www.youtube.com/embed/lLab1nw1opQ?start=18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="twitter-card">
+            <a class="twitter-timeline" href="https://twitter.com/LrtSumsel?ref_src=twsrc%5Etfw">Tweets by LrtSumsel</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+</section>
+
+<section id="pengelolaan" class="section-container">
+    <h1 style="text-align: center">DASAR HUKUM</h1>
+    <div class="presentation">
+            <iframe class="presentation-slides" src="https://docs.google.com/presentation/d/e/2PACX-1vRie2cOLj0qvBdfYyb3G1dYgYH9CA8C1wKVRmSCSVcl0r1y5ZHnzUHskQbmfam6oQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+</section>
+
+<section id="infografis" class="section-container">
+        <h1 style="text-align: center">INFORMASI</h1>
+        <div class="infographic-container">
+
+                <div class="infographic-slides fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="img/infografis/info0.jpg" style="width:100%">
+                </div>
+                
+                <div class="infographic-slides fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="img/infografis/info1.jpg" style="width:100%">
+                </div>
+                
+                <div class="infographic-slides fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="img/infografis/info2.jpg" style="width:100%">
+                </div>
+
+                <div class="infographic-slides fade">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="img/infografis/info3.jpg" style="width:100%">
+                </div>
+
+                <div class="infographic-slides fade">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="img/infografis/info4.jpg" style="width:100%">
+                </div>
+
+                <div class="infographic-slides fade">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="img/infografis/info7.jpg" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusInfos(-1)">&#10094;</a>
+                <a class="next" onclick="plusInfos(1)">&#10095;</a>
+                
+                </div>
+
+                <script src="lrt.js"></script>
+                
+</section>
+
+<section id="peta-stasiun" class="section-container">
+        <h1 style="text-align: center">PETA STASIUN</h1>
+    <div class="map-container">
+        <iframe class="map-stations" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63750.465437042425!2d104.7193266944953!3d-2.985235282551578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sstasiun+lrt!5e0!3m2!1sen!2sid!4v1561359509881!5m2!1sen!2sid" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</section>
+
+<section id="jadwal" class="section-container">    
+        <h1 style="text-align: center">JADWAL</h1>
+        <div class="schedule-container">
+            <img class="schedule-img" src="img/jadwal/jadwal1.jpg">
+            <img class="schedule-img" src="img/jadwal/jadwal2.jpg">
+        </div>
+</section>
+
+<section id="kesehatan" class="section-container">
+    <h1 style="text-align: center">LAYANAN KESEHATAN</h1>
+    <div class="icon-container">
+        <div class="icon-element">
+            <img class="icon-img" src="img/kesehatan/012-first aid kit.svg">
+            <h4 class="icon-text">P3K</h4>
+        </div>
+        <div class="icon-element">
+            <img class="icon-img" src="img/kesehatan/019-nurse.svg">
+            <h4 class="icon-text">Perawat</h4>
+        </div>
+        <div class="icon-element">
+                <img class="icon-img" src="img/kesehatan/050-hospital.svg">
+                <h4 class="icon-text">RS Terpadu</h4>
+            </div>
+        <div class="icon-element">
+            <img class="icon-img" src="img/kesehatan/027-wheelchair.svg">
+            <h4 class="icon-text">Kursi Roda</h4>
+        </div>
+        <div class="icon-element">
+            <img class="icon-img" src="img/kesehatan/026-stretcher.svg">
+            <h4 class="icon-text">Stretcher</h4>
+        </div>
+        <div class="icon-element">
+            <img class="icon-img" src="img/kesehatan/028-crutch.svg">
+            <h4 class="icon-text">Penyangga</h4>
+        </div>
+    </div>
+
+</section>
+
+<section id="pengaduan" class="section-container">
+    <h1 style="text-align: center">LAYANAN PENGADUAN</h1>
+    <div class="form-container">
+        <div class="form-element">
+            <label  class="label" for="name">Nama : </label>
+            <input class="input" type=text placeholder="Masukkan Namamu"  required>
+        </div>
+
+        <div class="form-element">
+            <label  class="label" for="name">Telpon: </label>
+            <input class="input" type=text placeholder="Masukkan No. Telponmu"  required>
+        </div>
+
+        <div class="form-element">
+            <label  class="label" for="name">E-mail : </label>
+            <input class="input" type=text placeholder="Masukkan E-mailmu"  required>
+        </div>
+
+        <div class="form-element">
+            <legend>Laporkan Pengaduan</legend>
+            <label for="comment"><textarea class="comment-area" style="" id="comment" placeholder="Masukkan pengaduanmu di sini..."></textarea></label>
+        </div>
+        
+              <div><button class="submit" type="submit">Kirim</button></div>
+
+
+
+
+    </div>
+</section>
+
+
+
+</div>
+
+<footer class="contact-container" id="kontak">
+    <div >
+            <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.214090867349!2d104.79506959999999!3d-3.0371753999999935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b9de9dac9cdb9%3A0xde7df666a031f6ad!2sKantor+LRT+Sumsel+%2F+Depo!5e0!3m2!1sen!2sid!4v1561386824077!5m2!1sen!2sid" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="contact">
+        <h1 style="text-align: left">HUBUNGI KAMI</h1>
+        <p style=""><strong>PEJABAT PENGELOLA INFORMASI DAN DOKUMENTASI<br>BALAI PENGELOLA LRT SUMATERA SELATAN</strong><br><strong>Alamat</strong>: Jl. Noerdin Pandji RT.011 RW.003 Kel. Jakabaring Selatan Kec. Rambutan Kab. Banyuasin, 30967<br><strong>Telp</strong>: (0711)-303-1808<br><strong>E-mail</strong>: balailrtsumsel@dephub.go.id</p>
+        <br>
+        <a href="https://twitter.com/lrtsumsel" target="_blank"><img style="width: 40px;" src="img/icons/twitter.svg"></a>
+        <a href="https://www.instagram.com/lrtsumselofficial/?hl=en" target="_blank"><img href="#"style="width: 40px;" src="img/icons/instagram.svg"></a>
+    </div>
+
+
+</footer>
+
+</body>
+</html>
